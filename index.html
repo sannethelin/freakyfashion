@@ -1,63 +1,109 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8"> <!--Anger teckenuppsättningen på sidan-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Gör sidan responsiv-->
     <title>Freaky Fashion</title> <!--Sidans namn-->
     <link rel="stylesheet" href="style.css">
     <!--Scrpit för bootstrap så jag kan köra footer menyn-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-        <header>
-        <!--LOGGA SÖK IKONER --> 
-            <img src="https://placehold.co/300x100/png" id="FreakyFashionLogotyp" alt="Freaky Fashion Logotyp">
-          
+    <header>
+        <!--LOGGA SÖK IKONER -->
+        <img src="https://placehold.co/300x100/png" id="FreakyFashionLogotyp" alt="Freaky Fashion Logotyp">
+
         <!-- Sökformulär för produkt -->
         <div class="search">
             <form action="/search" method="get" class="searchform">
                 <div class="search-ikon"> <!-- egen div för ikon för att kunna placera ovanpå fältet sök produkt -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <!-- förstoringsglas ikon -->
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16"> <!-- förstoringsglas ikon -->
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                     </svg>
                     <input type="text" id="search" name="query" placeholder="Sök produkt" required>
                 </div>
             </form>
         </div>
 
-            <div class="top_ikon">
-                <a href="#"><img src="bilder/heartfull.png"></a> 
-                <a href="#"><img src="bilder/basket.png"></a> 
-            </div>
-        </header>
+        <div class="top_ikon">
+            <a href="#"><img src="bilder/heartfull.png" alt="Ifyllt hjärta"></a>
+            <a href="#"><img src="bilder/basket.png" alt="Kundkorg"></a>
+        </div>
+    </header>
 
-        <!-- Topp menyn -->
-        <nav class="top_menu">
-            <a href="#">Nyheter</a>
-            <a href="#">Topplistan</a>
-            <a href="#">Rea</a>
-            <a href="#">Kampanjer</a>
-        </nav>
+    <!-- Topp menyn -->
+    <nav class="top_menu">
+        <a href="#">Nyheter</a>
+        <a href="#">Topplistan</a>
+        <a href="#">Rea</a>
+        <a href="#">Kampanjer</a>
+    </nav>
 
-        
-        <main>
-            <!-- HERO -->
-            <div class="hero">
-                <img src="https://placehold.co/600x400/png" alt="En bild för intresse">
+
+    <main>
+        <!-- HERO -->
+        <div class="hero">
+            <img src="https://placehold.co/600x400/png" alt="En bild för intresse">
+            <div class="herotext">
                 <h2>Lorem ipsum dolor</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque officia nam eligendi nemo quis suscipit ea ipsa, praesentium esse aliquam voluptatum tenetur laudantium nesciunt a! Voluptas nesciunt optio sequi? Magni?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque officia nam eligendi nemo quis
+                    suscipit ea ipsa, praesentium esse aliquam voluptatum tenetur laudantium nesciunt a! Voluptas
+                    nesciunt optio sequi? Magni?</p>
             </div>
-            <!--Populära produkter -->
-            <div class="popularaprodukter">
-                <a href="#" class="produktkort">
+        </div>
+
+        <!-- DEN HÄR SKALL INTE SYNAS PÅ SMÅ SKÄRMAR!!!!! -->
+        <!-- SPOTS -->
+        <div class="spots">
+            <a href="#">
+                <div class="spotscontainer">
+                    <div class="overlay-text">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <img src="https://placehold.co/300x200/png" alt="bild">
+                </div>
+            </a>
+            <a href="#">
+                <div class="spotscontainer">
+                    <div class="overlay-text">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <img src="https://placehold.co/300x200/png" alt="bild">
+                </div>
+            </a>
+            <a href="#">
+                <div class="spotscontainer">
+                    <div class="overlay-text">
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                    <img src="https://placehold.co/300x200/png" alt="bild">
+                </div>
+            </a>
+        </div>
+
+        <!--Populära produkter -->
+        <div class="popularaprodukter">
+            <div class="produktkort">
+                <a href="#">
                     <div class="produktbild-container">
+                        <div class="badge">
+                            Nyhet
+                        </div>
                         <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
                         <div class="ikon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
                             </svg>
                         </div>
                     </div>
@@ -69,241 +115,261 @@
                         <p>Levis</p>
                     </div>
                 </a>
-
-                <a href="#" class="produktkort">
-                    <div class="produktbild-container">
-                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
-                        <div class="ikon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="produktinfo">
-                        <h2>Svart T-shirt</h2>
-                        <p>199 SEK</p>
-                    </div>
-                    <div class="varumarke">
-                        <p>Levis</p>
-                    </div>
-                </a>
-
-
-                <a href="#" class="produktkort">
-                    <div class="produktbild-container">
-                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
-                        <div class="ikon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="produktinfo">
-                        <h2>Svart T-shirt</h2>
-                        <p>199 SEK</p>
-                    </div>
-                    <div class="varumarke">
-                        <p>Levis</p>
-                    </div>
-                </a>
-                
-
-
-                <a href="#" class="produktkort">
-                    <div class="produktbild-container">
-                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
-                        <div class="ikon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="produktinfo">
-                        <h2>Svart T-shirt</h2>
-                        <p>199 SEK</p>
-                    </div>
-                    <div class="varumarke">
-                        <p>Levis</p>
-                    </div>
-                </a>
-                
-
-
-                <a href="#" class="produktkort">
-                    <div class="produktbild-container">
-                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
-                        <div class="ikon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="produktinfo">
-                        <h2>Svart T-shirt</h2>
-                        <p>199 SEK</p>
-                    </div>
-                    <div class="varumarke">
-                        <p>Levis</p>
-                    </div>
-                </a>
-                
-
-
-                <a href="#" class="produktkort">
-                    <div class="produktbild-container">
-                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
-                        <div class="ikon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="produktinfo">
-                        <h2>Svart T-shirt</h2>
-                        <p>199 SEK</p>
-                    </div>
-                    <div class="varumarke">
-                        <p>Levis</p>
-                    </div>
-                </a>
-                
-
-
-                <a href="#" class="produktkort">
-                    <div class="produktbild-container">
-                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
-                        <div class="ikon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="produktinfo">
-                        <h2>Svart T-shirt</h2>
-                        <p>199 SEK</p>
-                    </div>
-                    <div class="varumarke">
-                        <p>Levis</p>
-                    </div>
-                </a>
-                
-
-
-                <a href="#" class="produktkort">
-                    <div class="produktbild-container">
-                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
-                        <div class="ikon-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
-                              </svg>
-                        </div>
-                    </div>
-                    <div class="produktinfo">
-                        <h2>Svart T-shirt</h2>
-                        <p>199 SEK</p>
-                    </div>
-                    <div class="varumarke">
-                        <p>Levis</p>
-                    </div>
-                </a>
-                
-            
-
             </div>
 
-            <div class="services">
-               <ul> 
-                    <li><img src="bilder/ikon1.png" alt="Ikon 1"> Gratis frakt och returer</li>
-                    <li><img src="bilder/ikon2.png" alt="Ikon 2"> Expressfrakt</li>
-                    <li><img src="bilder/ikon3.png" alt="Ikon 3"> Säkra betalningar</li>
-                    <li><img src="bilder/ikon4.png" alt="Ikon 1"> Nyheter varje dag</li>
-                </ul>
+            <div class="produktkort">
+                <a href="#">
+                    <div class="produktbild-container">
+                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
+                        <div class="ikon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="produktinfo">
+                        <h2>Svart T-shirt</h2>
+                        <p>199 SEK</p>
+                    </div>
+                    <div class="varumarke">
+                        <p>Levis</p>
+                    </div>
+                </a>
             </div>
-            
-        </main>
-        <!-- Footer med innehåll - COPYRIGHT -->
-        <footer>
+            <div class="produktkort">
+                <a href="#">
+                    <div class="produktbild-container">
+                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
+                        <div class="ikon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="produktinfo">
+                        <h2>Svart T-shirt</h2>
+                        <p>199 SEK</p>
+                    </div>
+                    <div class="varumarke">
+                        <p>Levis</p>
+                    </div>
+                </a>
+            </div>
+            <div class="produktkort">
+                <a href="#">
+                    <div class="produktbild-container">
+                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
+                        <div class="ikon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="produktinfo">
+                        <h2>Svart T-shirt</h2>
+                        <p>199 SEK</p>
+                    </div>
+                    <div class="varumarke">
+                        <p>Levis</p>
+                    </div>
+                </a>
+            </div>
+            <div class="produktkort">
+                <a href="#">
+                    <div class="produktbild-container">
+                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
+                        <div class="ikon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="produktinfo">
+                        <h2>Svart T-shirt</h2>
+                        <p>199 SEK</p>
+                    </div>
+                    <div class="varumarke">
+                        <p>Levis</p>
+                    </div>
+                </a>
+            </div>
+            <div class="produktkort">
+                <a href="#">
+                    <div class="produktbild-container">
+                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
+                        <div class="ikon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="produktinfo">
+                        <h2>Svart T-shirt</h2>
+                        <p>199 SEK</p>
+                    </div>
+                    <div class="varumarke">
+                        <p>Levis</p>
+                    </div>
+                </a>
+            </div>
+            <div class="produktkort">
+                <a href="#">
+                    <div class="produktbild-container">
+                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
+                        <div class="ikon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="produktinfo">
+                        <h2>Svart T-shirt</h2>
+                        <p>199 SEK</p>
+                    </div>
+                    <div class="varumarke">
+                        <p>Levis</p>
+                    </div>
+                </a>
+            </div>
+            <div class="produktkort">
+                <a href="#">
+                    <div class="produktbild-container">
+                        <img src="https://placehold.co/100x150/png" alt="Svart tshirt" class="produktbild">
+                        <div class="ikon-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="produktinfo">
+                        <h2>Svart T-shirt</h2>
+                        <p>199 SEK</p>
+                    </div>
+                    <div class="varumarke">
+                        <p>Levis</p>
+                    </div>
+                </a>
+            </div>
 
-            <!--Footer menyn-->
+        </div>
 
-            <!--<nav class="footer_meny">
-                <ul>
-                    <li>Shopping
+        <div class="services">
+            <ul>
+                <li><img src="bilder/ikon1.png" alt="Ikon 1"> Gratis frakt och returer</li>
+                <li><img src="bilder/ikon2.png" alt="Ikon 2"> Expressfrakt</li>
+                <li><img src="bilder/ikon3.png" alt="Ikon 3"> Säkra betalningar</li>
+                <li><img src="bilder/ikon4.png" alt="Ikon 1"> Nyheter varje dag</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <!--Footer menyn-->
+
+        <nav class="footer_meny">
+            <ul>
+                <li>
+                    <h5>Shopping</h5>
+                    <ul>
+                        <li><a href="#">Trenchcoats</a></li>
+                        <li><a href="#">Kappa</a></li>
+                        <li><a href="#">Pufferjackor</a></li>
+                        <li><a href="#">Vinterjackor</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h5>Mina sidor</h5>
+                    <ul>
+                        <li><a href="#">Mina ordrar</a></li>
+                        <li><a href="#">Mitt konto</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h5>Kundtjänst</h5>
+                    <ul>
+                        <li><a href="#">Returpolicy</a></li>
+                        <li><a href="#">Integritetspolicy</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Shopping
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
                         <ul>
                             <li><a href="#">Trenchcoats</a></li>
                             <li><a href="#">Kappa</a></li>
                             <li><a href="#">Pufferjackor</a></li>
                             <li><a href="#">Vinterjackor</a></li>
                         </ul>
-                    </li>
-
-                    <li>Mina sidor
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Mina sidor
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
                         <ul>
                             <li><a href="#">Mina ordrar</a></li>
                             <li><a href="#">Mitt konto</a></li>
-                        </ul>
-                    </li>
-            
-                    <li>Kundtjänst
-                        <ul>
-                            <li><a href="#">Returpolicy</a></li>
-                            <li><a href="#">Integritetspolicy</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav> -->
-
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Shopping
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <ul>
-                            <li><a href="#">Trenchcoats</a></li>
-                            <li><a href="#">Kappa</a></li>
-                            <li><a href="#">Pufferjackor</a></li>
-                            <li><a href="#">Vinterjackor</a></li>
                         </ul>
                     </div>
-                  </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Mina sidor
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Kundtjänst
                     </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <ul>
-                            <li><a href="#">Mina ordrar</a></li>
-                            <li><a href="#">Mitt konto</a></li>
-                        </ul> </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Kundtjänst
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <ul>
                             <li><a href="#">Returpolicy</a></li>
                             <li><a href="#">Integritetspolicy</a></li>
                         </ul>
-                    </li>
-                  </div>
-                  </div>
+
+                    </div>
                 </div>
-              </div>
-        </footer>
+            </div>
+        </div>
+    </footer>
 
 </body>
-</html>
 
+</html>
